@@ -1,8 +1,12 @@
-﻿using LocalMovieTheaterIncomings.Core.Services.Interfaces;
+﻿using LocalMovieTheaterIncomings.Core.Models;
+using LocalMovieTheaterIncomings.Core.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LocalMovieTheaterIncomings.Controllers
-{
+{ 
+    
+    [Produces("application/json")]
+    [Route("Food")]
     public class FoodController : Controller
     {
         private readonly IFoodService _foodService;
@@ -12,10 +16,17 @@ namespace LocalMovieTheaterIncomings.Controllers
             _foodService = foodService;
         }
 
+        [Route("~/GetAllSold")]
+        [HttpGet]
+        public IEnumerable<FoodItem> GetAllSold()
+        {
+            return _foodService.GetAllSold();
+        }
+
         public IActionResult Index()
         {
-            var itemsSold = _foodService.GetAllSold();
-            return View(itemsSold);
+            
+            return View(GetAllSold());
         }
     }
 }
