@@ -1,0 +1,14 @@
+C:\Users\user\RiderProjects\LocalMovieTheaterIncomings\LocalMovieTheaterIncomings.Core\obj\Debug\net6.0\LocalMovieTheaterIncomings.Core.csproj.AssemblyReference.cache
+C:\Users\user\RiderProjects\LocalMovieTheaterIncomings\LocalMovieTheaterIncomings.Core\obj\Debug\net6.0\LocalMovieTheaterIncomings.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\RiderProjects\LocalMovieTheaterIncomings\LocalMovieTheaterIncomings.Core\obj\Debug\net6.0\LocalMovieTheaterIncomings.Core.AssemblyInfoInputs.cache
+C:\Users\user\RiderProjects\LocalMovieTheaterIncomings\LocalMovieTheaterIncomings.Core\obj\Debug\net6.0\LocalMovieTheaterIncomings.Core.AssemblyInfo.cs
+C:\Users\user\RiderProjects\LocalMovieTheaterIncomings\LocalMovieTheaterIncomings.Core\obj\Debug\net6.0\LocalMovieTheaterIncomings.Core.csproj.CoreCompileInputs.cache
+C:\Users\user\RiderProjects\LocalMovieTheaterIncomings\LocalMovieTheaterIncomings.Core\bin\Debug\net6.0\LocalMovieTheaterIncomings.Core.deps.json
+C:\Users\user\RiderProjects\LocalMovieTheaterIncomings\LocalMovieTheaterIncomings.Core\bin\Debug\net6.0\LocalMovieTheaterIncomings.Core.runtimeconfig.json
+C:\Users\user\RiderProjects\LocalMovieTheaterIncomings\LocalMovieTheaterIncomings.Core\bin\Debug\net6.0\LocalMovieTheaterIncomings.Core.dll
+C:\Users\user\RiderProjects\LocalMovieTheaterIncomings\LocalMovieTheaterIncomings.Core\bin\Debug\net6.0\LocalMovieTheaterIncomings.Core.pdb
+C:\Users\user\RiderProjects\LocalMovieTheaterIncomings\LocalMovieTheaterIncomings.Core\obj\Debug\net6.0\LocalMovieTheaterIncomings.Core.dll
+C:\Users\user\RiderProjects\LocalMovieTheaterIncomings\LocalMovieTheaterIncomings.Core\obj\Debug\net6.0\refint\LocalMovieTheaterIncomings.Core.dll
+C:\Users\user\RiderProjects\LocalMovieTheaterIncomings\LocalMovieTheaterIncomings.Core\obj\Debug\net6.0\LocalMovieTheaterIncomings.Core.pdb
+C:\Users\user\RiderProjects\LocalMovieTheaterIncomings\LocalMovieTheaterIncomings.Core\obj\Debug\net6.0\LocalMovieTheaterIncomings.Core.genruntimeconfig.cache
+C:\Users\user\RiderProjects\LocalMovieTheaterIncomings\LocalMovieTheaterIncomings.Core\obj\Debug\net6.0\ref\LocalMovieTheaterIncomings.Core.dll
