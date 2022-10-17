@@ -5,8 +5,9 @@ using Microsoft.AspNetCore.Mvc;
 namespace LocalMovieTheaterIncomings.Controllers
 {
     
-    [Produces("application/json")]
-    [Route("Ticket")]
+    
+    [Produces("application/json")] 
+    [Route("incomings/Ticket/Sold")]
     public class TicketController : Controller
     {
         private readonly ITicketService _ticketService;
@@ -16,7 +17,7 @@ namespace LocalMovieTheaterIncomings.Controllers
             _ticketService = ticketService;
         }
 
-        [Route("~/GetAllSold")]
+        [Route("~/incomings/Ticket/GetAllSold")]
         [HttpGet]
         public IEnumerable<Ticket?> GetAllSold()
         {
