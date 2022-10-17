@@ -7,7 +7,7 @@ namespace LocalMovieTheaterIncomings.Core.Repositories
 
         public override IEnumerable<Ticket> GetAllSold()
         {
-            return Tickets.ToList();
+            return Items.ToList();
         }
 
     }

@@ -3,26 +3,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace LocalMovieTheaterIncomings.Core.Repositories.Interfaces;
 
-public abstract partial class ITicketRepository : DbContext
+public abstract partial class ITicketRepository : IDbContextRepository<Ticket>
 {
-    
-    public ITicketRepository()
-    {
-    }
-
-    public ITicketRepository(DbContextOptions<ITicketRepository> options)
-        : base(options)
-    {
-    }
-        
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    {
-        if (!optionsBuilder.IsConfigured)
-        {
-            optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS;Database=MovieTheaterIncomings;Trusted_Connection=True;");
-        }
-    }
-        
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Ticket>(entity =>
@@ -41,13 +23,5 @@ public abstract partial class ITicketRepository : DbContext
 
             entity.Property(e => e.StudioCutPercentage).HasColumnType("decimal(18, 0)");
         });
-
-        OnModelCreatingPartial(modelBuilder);
     }
-
-    partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
-    
-    public virtual DbSet<Ticket> Tickets { get; set; } = null!;
-
-    public abstract IEnumerable<Ticket> GetAllSold();
 }

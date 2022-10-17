@@ -3,25 +3,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace LocalMovieTheaterIncomings.Core.Repositories.Interfaces;
 
-public abstract partial class IFoodRepository: DbContext
+public abstract  partial class IFoodRepository: IDbContextRepository<FoodItem>
 {
-    public IFoodRepository()
-    {
-    }
-
-    public IFoodRepository(DbContextOptions<IFoodRepository> options)
-        : base(options)
-    {
-    }
-        
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    {
-        if (!optionsBuilder.IsConfigured)
-        {
-            optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS;Database=MovieTheaterIncomings;Trusted_Connection=True;");
-        }
-    }
-
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<FoodItem>(entity =>
@@ -40,12 +23,5 @@ public abstract partial class IFoodRepository: DbContext
 
             entity.Property(e => e.UnitPrice).HasColumnType("decimal(18, 0)");
         });
-        OnModelCreatingPartial(modelBuilder);
     }
-        
-    partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
-    
-    public virtual DbSet<FoodItem> FoodItems { get; set; } = null!;
-
-    public abstract IEnumerable<FoodItem> GetAllSold();
 }
